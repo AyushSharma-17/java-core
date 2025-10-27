@@ -18,5 +18,10 @@ public class LearnDeque {
         //remove from last
         System.out.println(dq.pollLast());
         System.out.println(dq);
+        //peek elements
+        System.out.println(dq.peek());
+        System.out.println(dq);
+        System.out.println(dq.peekLast());
+        
     }
 }
