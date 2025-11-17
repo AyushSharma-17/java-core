@@ -1,17 +1,16 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-
-public class comparatorsort {
+public class comparatorex {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
         students.add(new Student(1,"Ayush",22));
         students.add(new Student(2,"pyush",22));
-        students.add(new Student(3,"nikhil",24));
-        students.add(new Student(5,"Akhil",26));
-        students.add(new Student(4,"abhi",28));
+        students.add(new Student(4,"nikhil",24));
+        students.add(new Student(3,"Akhil",26));
+        students.add(new Student(5,"abhi",28));
        
        
        
@@ -20,18 +19,16 @@ public class comparatorsort {
         for(Student s: students){
             System.out.println(s);
         }
-
-           Collections.sort(students);
-           System.out.println("After sorting");
-           for(Student s : students){
+           //sorting by id using compartor
+           Collections.sort(students, new IdComparator());
+           System.out.println("after sorting by id");
+           for(Student s: students){
             System.out.println(s);
            }
-
-
-
+          
     }
 }
-class Student implements Comparable<Student> {
+class Student{
     int id;
     String name;
     int age;
@@ -44,12 +41,15 @@ class Student implements Comparable<Student> {
     public String toString() {
         return "Student [id=" + id + ", name=" + name + ", age=" + age + "]";
     }
+    
+    
+}
+class IdComparator implements Comparator<Student>{
+
     @Override
-    public int compareTo(Student o) {
+    public int compare(Student o1, Student o2) {
         // TODO Auto-generated method stub
-        //return this.id - o.id;        //sorting by id
-       // return this.name.compareTo(o.name); //sorting by name
-        return o.age - this.age;  //desending order
+        return o1.id -o2.id;
     }
     
 }
