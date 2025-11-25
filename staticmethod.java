@@ -20,6 +20,7 @@ class device1 {
         System.out.println("simple show");
     }
 
+    // sttaic method and only static variables can be used in static method
     static void show2() {
         System.out.println("static show2");
     }
