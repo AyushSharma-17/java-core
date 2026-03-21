@@ -47,9 +47,9 @@ class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student o) {
         // TODO Auto-generated method stub
-        //return this.id - o.id;        //sorting by id
-       // return this.name.compareTo(o.name); //sorting by name
-        return o.age - this.age;  //desending order
+        return this.id - o.id;        //sorting by id
+       //return this.name.compareTo(o.name); //sorting by name
+        //return o.age - this.age;  //desending order
     }
     
 }
