@@ -29,8 +29,8 @@ Output: [0,1]
 
 public class test1 {
     public static void main(String[] args) {
-        int[] nums = {1,2,4,5,6,8,9};
-        int target=10;
+        int[] nums = {2,7,11,15};
+        int target=9;
         int[] result= twoSum(nums,target);
         System.out.println("[" + result[0] + ", " + result[1] + "]");
     }
