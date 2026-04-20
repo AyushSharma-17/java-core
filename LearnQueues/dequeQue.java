@@ -20,6 +20,7 @@ public class dequeQue {
         System.out.println(que);
         System.out.println(que.pollFirst());   //removes from first
         System.out.println(que);
+        System.out.println(que.size());
 
     }
 }
