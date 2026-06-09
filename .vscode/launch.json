@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "jset2",
+            "request": "launch",
+            "mainClass": "jset2",
+            "projectName": "java core_3f7572e"
+        },
+        {
+            "type": "java",
             "name": "Mapin1",
             "request": "launch",
             "mainClass": "Mapin1",
