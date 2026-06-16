@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "arraysumlt",
+            "request": "launch",
+            "mainClass": "arraysumlt",
+            "projectName": "java core_3f7572e"
+        },
+        {
+            "type": "java",
             "name": "jset2",
             "request": "launch",
             "mainClass": "jset2",
